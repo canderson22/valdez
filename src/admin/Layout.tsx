@@ -1,13 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import "./App.css";
 
-function App() {
+const AdminLayout = () => {
   return (
-    <div className="App">
+    <div>
+      {/* admin navbar goes here */}
       <Outlet />
     </div>
   );
-}
+};
 
-export default App;
+export { AdminLayout };

@@ -1,0 +1,57 @@
+/* Center the logo */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  transition: margin-top 0.4s ease-in-out;
+}
+
+/* Adjust logo size */
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar {
+  margin-top: 8px;
+  margin-bottom: 70px;
+  border-bottom: 1px solid rgb(237, 235, 235);
+
+  .show {
+    padding-top: 60px;
+  }
+}
+
+.nav-item {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  &.show {
+    .nav-link {
+      opacity: 1;
+    }
+  }
+}
+
+.nav-link {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .show {
+      padding-top: 0px;
+    }
+  }
+
+  .nav-link {
+    opacity: 1;
+  }
+}
