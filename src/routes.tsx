@@ -6,7 +6,9 @@ import { AdminLayout } from "./admin/Layout";
 import { ConsumerLayout } from "./consumer/Layout";
 // Pages
 import { Home } from "./consumer/pages/Home";
+import { ShopPage } from "./consumer/pages/Shop";
 
+// Howard look here look at the pattern
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <ConsumerLayout />,
-        children: [{ path: "/", element: <Home /> }],
+        children: [
+          { path: "/", element: <Home /> },
+          { path: "shop", element: <ShopPage /> },
+        ],
       },
     ],
   },

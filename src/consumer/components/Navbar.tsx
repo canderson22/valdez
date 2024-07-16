@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src="mic-logo.png" alt="Logo" />
         </a>
         <button
@@ -26,7 +26,7 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/shop">
                 Shop
               </a>
             </li>
