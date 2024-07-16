@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/valdez/static/css/main.957faf57.css",
+    "main.js": "/valdez/static/js/main.0127ba47.js",
+    "static/js/453.f20e90ab.chunk.js": "/valdez/static/js/453.f20e90ab.chunk.js",
+    "index.html": "/valdez/index.html",
+    "main.957faf57.css.map": "/valdez/static/css/main.957faf57.css.map",
+    "main.0127ba47.js.map": "/valdez/static/js/main.0127ba47.js.map",
+    "453.f20e90ab.chunk.js.map": "/valdez/static/js/453.f20e90ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.957faf57.css",
+    "static/js/main.0127ba47.js"
+  ]
+}
