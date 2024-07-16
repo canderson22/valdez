@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <img src="mic-logo.png" alt="Logo" />
+          <img src="./mic-logo.png" alt="Logo" />
         </a>
         <button
           className="navbar-toggler"
