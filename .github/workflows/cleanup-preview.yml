@@ -1,0 +1,21 @@
+name: Clean Up Preview Deployment
+
+on:
+  delete:
+    branches-ignore:
+      - main
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone --branch=gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+          cd gh-pages
+          git rm -r preview/${GITHUB_REF#refs/heads/}
+          git commit -m "Remove preview for $GITHUB_REF"
+          git push origin gh-pages
