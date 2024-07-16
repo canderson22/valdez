@@ -1,11 +1,11 @@
 import React from "react";
 
-interface Testimonial {
-  name: string; // Name of the person giving the testimonial
-  quote: string; // The testimonial quote
-  company?: string; // Optional company affiliation
-  image?: string; // Optional image URL
-}
+// interface Testimonial {
+//   name: string; // Name of the person giving the testimonial
+//   quote: string; // The testimonial quote
+//   company?: string; // Optional company affiliation
+//   image?: string; // Optional image URL
+// }
 
 // const testimonials: Testimonial[] = [
 //   {
