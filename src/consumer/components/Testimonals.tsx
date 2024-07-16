@@ -7,41 +7,41 @@ interface Testimonial {
   image?: string; // Optional image URL
 }
 
-const testimonials: Testimonial[] = [
-  {
-    name: "John Doe",
-    quote:
-      "This product is amazing! It has helped me improve my workflow significantly.",
-    company: "ACME Inc.",
-    image: "https://via.placeholder.com/150", // Replace with your image URL
-  },
-  {
-    name: "Jane Smith",
-    quote:
-      "I highly recommend this service. The customer support is outstanding!",
-  },
-];
+// const testimonials: Testimonial[] = [
+//   {
+//     name: "John Doe",
+//     quote:
+//       "This product is amazing! It has helped me improve my workflow significantly.",
+//     company: "ACME Inc.",
+//     image: "https://via.placeholder.com/150", // Replace with your image URL
+//   },
+//   {
+//     name: "Jane Smith",
+//     quote:
+//       "I highly recommend this service. The customer support is outstanding!",
+//   },
+// ];
 
-const TestimonialCard: React.FC<Testimonial> = ({
-  name,
-  quote,
-  company,
-  image,
-}) => {
-  return (
-    <div className="testimonial-card">
-      <div className="testimonial-image-wrapper">
-        {image && <img className="testimonial-image" src={image} alt={name} />}
-        <i className="fas fa-quote-left testimonial-quote-icon"></i>
-      </div>
-      <div className="testimonial-content">
-        <p className="testimonial-text">{quote}</p>
-        {company && <p className="testimonial-company">{company}</p>}
-        <h5 className="testimonial-name">{name}</h5>
-      </div>
-    </div>
-  );
-};
+// const TestimonialCard: React.FC<Testimonial> = ({
+//   name,
+//   quote,
+//   company,
+//   image,
+// }) => {
+//   return (
+//     <div className="testimonial-card">
+//       <div className="testimonial-image-wrapper">
+//         {image && <img className="testimonial-image" src={image} alt={name} />}
+//         <i className="fas fa-quote-left testimonial-quote-icon"></i>
+//       </div>
+//       <div className="testimonial-content">
+//         <p className="testimonial-text">{quote}</p>
+//         {company && <p className="testimonial-company">{company}</p>}
+//         <h5 className="testimonial-name">{name}</h5>
+//       </div>
+//     </div>
+//   );
+// };
 // Break this up into smaller components
 const Testimonials: React.FC = () => {
   return (
