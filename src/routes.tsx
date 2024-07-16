@@ -8,6 +8,7 @@ import { ConsumerLayout } from "./consumer/Layout";
 import { Home } from "./consumer/pages/Home";
 import { ShopPage } from "./consumer/pages/Shop";
 
+// Howard look here look at the pattern
 export const router = createBrowserRouter([
   {
     path: "/",
