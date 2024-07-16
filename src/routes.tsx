@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 // Entry point
 import App from "./App";
 // Main Layouts
@@ -7,21 +7,26 @@ import { ConsumerLayout } from "./consumer/Layout";
 // Pages
 import { Home } from "./consumer/pages/Home";
 
-export const router = createHashRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "admin",
+          element: <AdminLayout />,
+          children: [],
+        },
+        {
+          path: "/",
+          element: <ConsumerLayout />,
+          children: [{ path: "/", element: <Home /> }],
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "admin",
-        element: <AdminLayout />,
-        children: [],
-      },
-      {
-        path: "/",
-        element: <ConsumerLayout />,
-        children: [{ path: "/", element: <Home /> }],
-      },
-    ],
-  },
-]);
+    basename: "/valdez",
+  }
+);
