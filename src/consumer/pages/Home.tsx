@@ -10,7 +10,7 @@ const Home = () => {
           <iframe
             width="100%"
             height="500"
-            src="https://www.youtube.com/embed/z1ISznly3pw"
+            src="https://www.youtube.com/embed/NV19XDWPkvQ"
             title="Jimmy Valdez Born and Raised In L.A Official Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
