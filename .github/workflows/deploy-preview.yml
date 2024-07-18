@@ -32,9 +32,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_PAT }}
+          destination_dir: preview/${{ github.ref_name }}
           publish_dir: ./build
           publish_branch: gh-pages
-          destination_dir: preview/${{ github.ref_name }}
 
   delete-preview:
     if: github.event_name == 'delete'
